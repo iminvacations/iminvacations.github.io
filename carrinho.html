@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
+        <title> Produtox - Holla Guapa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="200px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                <li><a href="">Início</a></li>
+                <li><a href="">Produtos</a></li>
+                <li><a href="">Acerca</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Conta</a></li>
+                <ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">   
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">   
+
+        </div>
+        </div>
+    </div>
+
+    
+<div class="small-container cart-page">
+<table>
+    <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/galeriaprodutox.jpg">
+                <div>
+                    <p>Colar Azul Marinho</p>
+                    <br>
+                    <small>Preço: 30€</small>
+                    <br>
+                    <a href="">Remover</a>
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>€30</td>
+    </tr>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+<h3>Faz download da nossa app</h3>
+<p>da download da nossa app para ios e android</p>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/cabecalho-1.jpg">
+                <p>colares e pulseiras boas e baratinhas venha comprar</p>
+                            </div>
+     <div class="footer-col-3">
+     <h3>Links Uteis</h3>
+    <ul>
+        <li>Copoes</li>
+        <li>Localizacao</li>
+        <li>Politica de Devolucao</li>
+    </ul>
+       </div>
+       <div class="footer-col-4">
+        <h3>Segue-nos</h3>
+       <ul>
+           <li>Facebook</li>
+           <li>Instagram</li>
+           <li>Pinterest</li>
+       </ul>
+          </div>
+        </div>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+    </body>
+</html>
+
+

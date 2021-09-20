@@ -1,0 +1,166 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todos os Produtos - Holla Guapa</title>
+        <script src="https://kit.fontawesome.com/b7fbd4ae08.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="200px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="">Acerca</a></li>
+                <li><a href="javascript:;" id="scrollToBottom">Contacto</a></li> 
+                <ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">   
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">   
+
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                return false;
+            });
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        });
+    </script>
+
+
+
+
+    
+<!------ produtos ------>
+<div class="small-container"> 
+    <div class="row row-2">
+        <h2>Todos os Produtos</h2> 
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <a href="produtos/lapislazuli.html">
+<img src="images/lapislazuli.jpg">
+</a>
+<h4>Lápis Lazuli</h4>
+<p>10,00€</p>
+        </div>
+        <div class="col-4">
+            <a href="produtos/BrincosZhara.html">
+            <img src="images/BrincosZhara.jpg">
+        </a>
+<h4>Brincos Zhara</h4>
+<p>20,00€</p>
+        </div>
+        <div class="col-4">
+            <a href="produtos/product-details.html">
+            <img src="images/fly.jpg">
+        </a>
+<h4>Fly</h4>
+<p>20,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="images/esmeralda.jpg">            
+            <h4>Madonna</h4>
+            <p>15,00€</p>  
+        </div>
+        <div class="col-4">
+            <img src="images/Lagrima.jpg">            
+            <h4>Lágrima</h4>
+            <p>15,00€</p>  
+        </div>
+        <div class="col-4">
+            <img src="images/PetalaRosa.jpg">            
+            <h4>Pétala Rosa</h4>
+            <p>15,00€</p>  
+        </div>
+        <div class="col-4">
+            <img src="images/Estrelicia.jpg">            
+            <h4>Estrelícia</h4>
+            <p>15,00€</p>  
+        </div>
+        <div class="col-4">
+            <img src="images/Star.jpg">            
+            <h4>Star</h4>
+            <p>15,00€</p>  
+        </div>
+        <div class="col-4">
+            <img src="images/Coin.jpg">            
+            <h4>Coin</h4>
+            <p>15,00€</p>  
+        </div>
+    </div>
+
+<a href="products.html" class="page-btn"> 1 </a>
+<a href="products2.html" class="page-btn"> 2 </a>
+<a href="" class="page-btn"> ... </a>
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/cabecalho-1.jpg">
+                                </div>
+         <div class="footer-col-3">
+         <h3>Contactos</h3>
+        <ul>
+            <li><a><i class="fas fa-phone"></i> 911222333</a></li>
+            <li><a><i class="far fa-envelope"></i>  joaomaria@gmail.com</a></li>
+        </ul>  
+           </div>
+           <div class="footer-col-4">
+            <h3>Segue-nos</h3>
+           <ul>
+               <li><i class="fa fa-facebook-square"></i>  <a href="https://www.facebook.com/Holla-Guapas-100455685711991/">Facebook</a></li>
+               <li><i class="fab fa-instagram"></i>  <a href="https://www.instagram.com/hollaguapa2021/">Instagram</a></li>
+           </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+    </body>
+</html>
+
+

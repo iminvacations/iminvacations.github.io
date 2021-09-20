@@ -1,0 +1,148 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Produtox - Holla Guapa</title>
+        <script src="https://kit.fontawesome.com/b7fbd4ae08.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="C:\xampp\htdocs\LojaTia\style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="C:\xampp\htdocs\LojaTia\images/logo.png" width="200px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                <li><a href="C:\xampp\htdocs\LojaTia\index.html">Início</a></li>
+                <li><a href="C:\xampp\htdocs\LojaTia\products.html"></a>Produtos</a></li>
+                <li><a href=""></a>Acerca</a></li>
+                <li><a href="javascript:;" id="scrollToBottom">Contacto</a></li> 
+                <ul>
+            </nav>
+            <img src="C:\xampp\htdocs\LojaTia\images/cart.png" width="30px" height="30px">   
+            <img src="C:\xampp\htdocs\LojaTia\images/menu.png" class="menu-icon"
+            onclick="menutoggle()">   
+
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-4">
+                <img src="C:\xampp\htdocs\LojaTia\images/fly.jpg" width="100%">
+            </div>
+            <div class="col-2">
+<p>Inicio / Produto x</p>
+<h1>Pulseira azul marinho</h1>
+<h4>30€</h4>
+<br>
+
+<h3>Detalhes do Produto</h3>
+<br>
+<p>Prova de agua aaaaaaaaaa ou nao meter nada sla</p>
+            </div>
+        </div>
+    </div>
+
+    
+<!------ produtos ------>
+<div class="small-container"> 
+    <div class="row">
+        <div class="col-4">
+<img src="C:\xampp\htdocs\LojaTia\images/produto-1.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>10,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\xampp\htdocs\LojaTia\images/produto-2.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>20,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\xampp\htdocs\LojaTia\images/produto-3.jpg">
+            <h4>Pulseira De Rubi</h4>
+            <p>15,00€</p>  
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                return false;
+            });
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        });
+    </script>
+  
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-2">
+                <img src="C:\xampp\htdocs\LojaTia\images/cabecalho-1.jpg">
+                            </div>
+     <div class="footer-col-3">
+     <h3>Contactos</h3>
+    <ul>
+        <li><a><i class="fas fa-phone"></i> 911222333</a></li>
+        <li><a><i class="far fa-envelope"></i>  joaomaria@gmail.com</a></li>
+    </ul>  
+       </div>
+       <div class="footer-col-4">
+        <h3>Segue-nos</h3>
+       <ul>
+           <li><i class="fa fa-facebook-square"></i>  <a href="https://www.facebook.com/Holla-Guapas-100455685711991/">Facebook</a></li>
+           <li><i class="fab fa-instagram"></i>  <a href="https://www.instagram.com/hollaguapa2021/">Instagram</a></li>
+       </ul>
+          </div>
+        </div>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+    </body>
+</html>
+
+

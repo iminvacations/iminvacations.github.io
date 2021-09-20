@@ -1,0 +1,188 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio - Holla Gapa</title>
+        <script src="https://kit.fontawesome.com/b7fbd4ae08.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="250px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="simple-php-shopping-cart/index.php">Acerca</a></li>
+                <li><a href="javascript:;" id="scrollToBottom">Contacto</a></li> 
+                <ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">   
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">   
+
+        </div>
+        <div class="row">
+            <div class="col-2">
+             <h1>Women things!</h1>
+             <p>Estas pulseiras sao muito giras mesmo!!! Muito trabalho e womans yeh</p>
+             <a href="products.html" class="btn">Explorar  &#11179;</a>
+            </div>
+            <div class="col-2">
+             <img src="images/imagemgrandepagprincipal.png">
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    
+<!------ categorias ------>
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/categoria-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/categoria-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/categoria-3.jpg">
+            </div>
+         </div>
+        </div>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type = "text/javascript">
+        $(function () {
+            $('#scrollToBottom').bind("click", function () {
+                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+                return false;
+            });
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        });
+    </script>
+
+
+<!------ produtos ------>
+<div class="small-container">
+    <h2 class="title"> Produtos em Desconto?</h2>
+    <div class="row">
+        <div class="col-4">
+<img src="images/produto-1.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>10,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="images/produto-2.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>20,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="images/produto-3.jpg">
+            <h4>Pulseira De Rubi</h4>
+            <p>15,00€</p>  
+        </div>
+    </div>
+    <h2 class="title">Novos Produtos</h2>
+    <div class="row">
+        <div class="col-4">
+<img src="images/produto-1.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>10,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="images/produto-2.jpg">
+<h4>Pulseira De Rubi</h4>
+<p>20,00€</p>
+        </div>
+        <div class="col-4">
+            <img src="images/produto-3.jpg">
+            <h4>Pulseira De Rubi</h4>
+            <p>15,00€</p>  
+        </div>
+</div>
+</div>
+<!---------oferta-------->
+<!--------<div class="offer">
+    <div class="small-container">
+        <div class="row">
+<div class="col-2">
+<img src="images/produto-1.jpg" class="offer-img">
+</div>
+<div class="col-2">
+    <p>XXXXXXXXXX</p>
+    <h1>Marioneta</h1>
+    <small>Pulseira bonita azul e feita de carbono dos himalais</small>
+</div>
+        </div>
+    </div>
+</div>-------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-2">
+                <img src="images/cabecalho-1.jpg">
+                            </div>
+     <div class="footer-col-3">
+     <h3>Contactos</h3>
+    <ul>
+        <li><a><i class="fas fa-phone"></i> 911222333</a></li>
+        <li><a><i class="far fa-envelope"></i>  joaomaria@gmail.com</a></li>
+    </ul>  
+       </div>
+       <div class="footer-col-4">
+        <h3>Segue-nos</h3>
+       <ul>
+           <li><i class="fa fa-facebook-square"></i>  <a href="https://www.facebook.com/Holla-Guapas-100455685711991/">Facebook</a></li>
+           <li><i class="fab fa-instagram"></i>  <a href="https://www.instagram.com/hollaguapa2021/">Instagram</a></li>
+       </ul>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("fast");
+      });
+  </script>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+    </body>
+</html>
+
+
